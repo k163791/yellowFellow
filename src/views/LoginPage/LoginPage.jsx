@@ -69,7 +69,7 @@ class LoginPage extends React.Component {
         console.log('success');
       return(
       <Router history={this.hist}>
-        <Route path="/comp" component={Components} />
+        <Route path="/something/comp" component={Components} />
       </Router>
         ) 
     }
@@ -190,7 +190,7 @@ class LoginPage extends React.Component {
                       />
                     </CardBody>
                     <CardFooter className={classes.cardFooter}>
-                      <Button href='/comp' simple color="primary" size="lg">
+                      <Button href='/waqarsFriend/#/comp' simple color="primary" size="lg">
                         Get started
                       </Button>
                     </CardFooter>
