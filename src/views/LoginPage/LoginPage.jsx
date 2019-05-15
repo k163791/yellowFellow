@@ -18,18 +18,24 @@ import CardBody from "components/Card/CardBody.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
-
+import users from './users.js';
 import loginPageStyle from "assets/jss/material-kit-react/views/loginPage.jsx";
-
+import { Redirect, Route, Router } from 'react-router-dom'
+import Components from "views/Components/Components.jsx";
 import image from "assets/img/bg7.jpg";
+import { createBrowserHistory } from "history";
 
 class LoginPage extends React.Component {
   constructor(props) {
     super(props);
     // we use this to make the card to appear after the page has been rendered
     this.state = {
-      cardAnimaton: "cardHidden"
+      cardAnimaton: "cardHidden",
+      name : '',
+      email : '',
+      password : ''
     };
+    this.hist = createBrowserHistory();
   }
   componentDidMount() {
     // we add a hidden class to the card and after 700 ms we delete it and the transition appears
@@ -39,7 +45,36 @@ class LoginPage extends React.Component {
       }.bind(this),
       700
     );
+
+
   }
+
+
+  onNameChange = (event) => {
+    this.setState({name:event.target.value})
+    console.log(this.state.name);
+  }
+
+  onEmailChange = (event) => {
+    this.setState({email:event.target.value})
+  }
+
+  onPasswordChange = (event) => {
+    this.setState({password:event.target.value})
+  }
+
+  onSubmit = () => {
+    if(this.state.name === 'Uzair' && this.state.email === 'uzair@gmail.com' && 
+        this.state.password === '12345') {
+        console.log('success');
+      return(
+      <Router history={this.hist}>
+        <Route path="/comp" component={Components} />
+      </Router>
+        ) 
+    }
+  }
+
   render() {
     const { classes, ...rest } = this.props;
     return (
@@ -47,7 +82,7 @@ class LoginPage extends React.Component {
         <Header
           absolute
           color="transparent"
-          brand="Material Kit React"
+          brand="Yellow Fellow"
           rightLinks={<HeaderLinks />}
           {...rest}
         />
@@ -99,27 +134,33 @@ class LoginPage extends React.Component {
                     <p className={classes.divider}>Or Be Classical</p>
                     <CardBody>
                       <CustomInput
+                        
                         labelText="First Name..."
                         id="first"
+                        
                         formControlProps={{
                           fullWidth: true
                         }}
                         inputProps={{
                           type: "text",
+                          onChange : this.onNameChange,
                           endAdornment: (
-                            <InputAdornment position="end">
+                            <InputAdornment  position="end">
                               <People className={classes.inputIconsColor} />
                             </InputAdornment>
                           )
                         }}
+
                       />
                       <CustomInput
+                        
                         labelText="Email..."
                         id="email"
                         formControlProps={{
                           fullWidth: true
                         }}
                         inputProps={{
+                          onChange : this.onEmailChange,
                           type: "email",
                           endAdornment: (
                             <InputAdornment position="end">
@@ -129,12 +170,14 @@ class LoginPage extends React.Component {
                         }}
                       />
                       <CustomInput
+                        onChange={this.onPasswordChange}
                         labelText="Password"
                         id="pass"
                         formControlProps={{
                           fullWidth: true
                         }}
                         inputProps={{
+                          onChange : this.onPasswordChange,
                           type: "password",
                           endAdornment: (
                             <InputAdornment position="end">
@@ -147,7 +190,7 @@ class LoginPage extends React.Component {
                       />
                     </CardBody>
                     <CardFooter className={classes.cardFooter}>
-                      <Button simple color="primary" size="lg">
+                      <Button href='/comp' simple color="primary" size="lg">
                         Get started
                       </Button>
                     </CardFooter>

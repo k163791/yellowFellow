@@ -17,30 +17,32 @@ import Primary from "components/Typography/Primary.jsx";
 import Muted from "components/Typography/Muted.jsx";
 import Quote from "components/Typography/Quote.jsx";
 import typographyStyle from "assets/jss/material-kit-react/views/componentsSections/typographyStyle.jsx";
-import image from "assets/img/faces/avatar.jpg";
-import image1 from "assets/img/faces/camp.jpg";
-import image2 from "assets/img/examples/clem-onojegaw.jpg";
-import image3 from "assets/img/examples/clem-onojeghuo.jpg";
-import image4 from "assets/img/examples/cynthia-del-rio.jpg";
-import image5 from "assets/img/examples/mariya-georgieva.jpg";
-import image6 from "assets/img/examples/olu-eletu.jpg";
-import image7 from "assets/img/examples/studio-1.jpg";
-import image8 from "assets/img/examples/studio-2.jpg";
-import image9 from "assets/img/examples/studio-3.jpg";
-import image10 from "assets/img/examples/studio-4.jpg";
-import image11 from "assets/img/examples/studio-5.jpg";
-import image12 from "assets/img/faces/card-profile1-square.jpg";
-import image13 from "assets/img/faces/card-profile2-square.jpg";
-import image14 from "assets/img/faces/card-profile4-square.jpg";
-import image15 from "assets/img/faces/card-profile5-square.jpg";
-import image16 from "assets/img/faces/card-profile6-square.jpg";
-import image17 from "assets/img/faces/christian.jpg";
-import image18 from "assets/img/faces/kendall.jpg";
-import image19 from "assets/img/faces/marc.jpg";
-import image20 from "assets/img/Food1.jpg";
-import image21 from "assets/img/Food2.jpg";
-import image22 from "assets/img/Food3.jpg";
-import image23 from "assets/img/Food4.jpeg";
+import image from "assets/img/foods/1.jpeg";
+import image1 from "assets/img/foods/2.jpeg";
+import image2 from "assets/img/foods/3.jpeg";
+import image3 from "assets/img/foods/4.jpeg";
+import image4 from "assets/img/foods/5.jpeg";
+import image5 from "assets/img/foods/6.jpeg";
+import image6 from "assets/img/foods/7.jpeg";
+import image7 from "assets/img/foods/8.jpeg";
+import image8 from "assets/img/foods/9.jpeg";
+import image9 from "assets/img/foods/10.jpeg";
+import image10 from "assets/img/foods/11.jpeg";
+import image11 from "assets/img/foods/12.jpeg";
+import image12 from "assets/img/foods/13.jpeg";
+import image13 from "assets/img/foods/14.jpeg";
+import image14 from "assets/img/foods/15.jpeg";
+import image15 from "assets/img/foods/16.jpeg";
+import image16 from "assets/img/foods/17.jpeg";
+import image17 from "assets/img/foods/18.jpeg";
+import image18 from "assets/img/foods/19.jpeg";
+import image19 from "assets/img/foods/20.jpeg";
+import image20 from "assets/img/foods/21.jpeg";
+import image21 from "assets/img/foods/22.jpeg";
+import image22 from "assets/img/foods/23.jpeg";
+import image23 from "assets/img/foods/24.jpeg";
+import image24 from "assets/img/foods/25.jpeg";
+import image25 from "assets/img/foods/26.jpeg";
 class SectionTypography extends React.Component {
   render() {
     const { classes } = this.props;
@@ -107,21 +109,21 @@ class SectionTypography extends React.Component {
             </div>
             <br />
             <GridContainer>
-              <GridItem xs={12} sm={2} md={4}>
+              <GridItem xs={12} sm={2} >
                 <img
                   src={image}
                   alt="..."
                   className={classes.imgRounded + " " + classes.imgFluid}
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image1}
                   alt="..."
                   className={classes.imgRoundedCircle + " " + classes.imgFluid}
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image2}
                   alt="..."
@@ -134,7 +136,7 @@ class SectionTypography extends React.Component {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image3}
                   alt="..."
@@ -147,21 +149,21 @@ class SectionTypography extends React.Component {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4}>
+              <GridItem xs={12} sm={2} >
                 <img
                   src={image4}
                   alt="..."
                   className={classes.imgRounded + " " + classes.imgFluid}
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image5}
                   alt="..."
                   className={classes.imgRoundedCircle + " " + classes.imgFluid}
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image6}
                   alt="..."
@@ -174,7 +176,7 @@ class SectionTypography extends React.Component {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image7}
                   alt="..."
@@ -187,21 +189,21 @@ class SectionTypography extends React.Component {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4}>
+              <GridItem xs={12} sm={2} >
                 <img
                   src={image8}
                   alt="..."
                   className={classes.imgRounded + " " + classes.imgFluid}
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image9}
                   alt="..."
                   className={classes.imgRoundedCircle + " " + classes.imgFluid}
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image10}
                   alt="..."
@@ -214,7 +216,7 @@ class SectionTypography extends React.Component {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image11}
                   alt="..."
@@ -227,21 +229,21 @@ class SectionTypography extends React.Component {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4}>
+              <GridItem xs={12} sm={2} >
                 <img
                   src={image12}
                   alt="..."
                   className={classes.imgRounded + " " + classes.imgFluid}
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image13}
                   alt="..."
                   className={classes.imgRoundedCircle + " " + classes.imgFluid}
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image14}
                   alt="..."
@@ -254,7 +256,7 @@ class SectionTypography extends React.Component {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image15}
                   alt="..."
@@ -267,21 +269,21 @@ class SectionTypography extends React.Component {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4}>
+              <GridItem xs={12} sm={2} >
                 <img
                   src={image16}
                   alt="..."
                   className={classes.imgRounded + " " + classes.imgFluid}
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image17}
                   alt="..."
                   className={classes.imgRoundedCircle + " " + classes.imgFluid}
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image18}
                   alt="..."
@@ -294,7 +296,7 @@ class SectionTypography extends React.Component {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image19}
                   alt="..."
@@ -307,21 +309,21 @@ class SectionTypography extends React.Component {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4}>
+              <GridItem xs={12} sm={2} >
                 <img
                   src={image20}
                   alt="..."
                   className={classes.imgRounded + " " + classes.imgFluid}
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image21}
                   alt="..."
                   className={classes.imgRoundedCircle + " " + classes.imgFluid}
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image22}
                   alt="..."
@@ -334,9 +336,35 @@ class SectionTypography extends React.Component {
                   }
                 />
               </GridItem>
-              <GridItem xs={12} sm={2} md={4} className={classes.marginLeft}>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
                 <img
                   src={image23}
+                  alt="..."
+                  className={
+                    classes.imgRaised +
+                    " " +
+                    classes.imgRoundedCircle +
+                    " " +
+                    classes.imgFluid
+                  }
+                />
+              </GridItem>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
+                <img
+                  src={image24}
+                  alt="..."
+                  className={
+                    classes.imgRaised +
+                    " " +
+                    classes.imgRounded +
+                    " " +
+                    classes.imgFluid
+                  }
+                />
+              </GridItem>
+              <GridItem xs={12} sm={2}  className={classes.marginLeft}>
+                <img
+                  src={image25}
                   alt="..."
                   className={
                     classes.imgRaised +

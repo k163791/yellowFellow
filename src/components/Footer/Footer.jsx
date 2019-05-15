@@ -32,7 +32,7 @@ function Footer({ ...props }) {
                 className={classes.block}
                 target="_blank"
               >
-                Uzair Hussain
+                
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
@@ -66,13 +66,13 @@ function Footer({ ...props }) {
         </div>
         <div className={classes.right}>
           &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
+          <Favorite className={classes.icon} /> 
           <a style={{cursor:'pointer'}}
             // href="https://www.creative-tim.com"
             className={aClasses}
             target="_blank"
           >
-            Uzair Hussain
+            
           </a>{" "}
           for a better web.
         </div>
