@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/yellow-fellow/precache-manifest.528cccfe6aaaf3d34f0177bd75e7b936.js"
+  "/yellowFellow/precache-manifest.9ef1afc701a76f53b4b7d25486fe319e.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/yellow-fellow/index.html", {
+workbox.routing.registerNavigationRoute("/yellowFellow/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
