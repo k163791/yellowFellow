@@ -3,7 +3,7 @@
   "version": "1.4.0",
   "description": "Material Kit React. Coded by Uzair Hussain",
   "private": true,
-  "homepage":"https://k163791.github.io/waqarsFriend/",
+  "homepage":"https://k163791.github.io/yellow-fellow/",
   "main": "dist/index.js",
   "dependencies": {
     "@material-ui/core": "3.9.2",
