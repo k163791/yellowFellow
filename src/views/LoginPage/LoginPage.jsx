@@ -190,7 +190,11 @@ class LoginPage extends React.Component {
                       />
                     </CardBody>
                     <CardFooter className={classes.cardFooter}>
+<<<<<<< HEAD
                       <Button href='/waqarsFriend/#/comp' simple color="primary" size="lg">
+=======
+                      <Button href='//waqarsFriend/#/comp' simple color="primary" size="lg">
+>>>>>>> 5b52cd26d0675161da4331dc006a072a33260e4c
                         Get started
                       </Button>
                     </CardFooter>
